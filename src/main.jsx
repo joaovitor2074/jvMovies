@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import Movie from './pages/movie.jsx'
 import Search from './pages/Search.jsx'
@@ -10,7 +10,7 @@ import Search from './pages/Search.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <HashRouter>
+    <BrowserRouter basename="/jvMovies">
       <Routes>
         <Route element={<App />}>
           <Route path="/" element={<Home />} />
@@ -18,6 +18,6 @@ createRoot(document.getElementById('root')).render(
           <Route path="search" element={<Search />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   </StrictMode>,
 )
