@@ -1,0 +1,106 @@
+/* Container principal da Home */
+.home-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.homeContainer {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.homeTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #333;
+}
+
+.moviesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.5rem;
+}
+
+.loadingText {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #666;
+}
+
+/* Título da página */
+.home-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #333;
+}
+
+/* Grid de filmes */
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Mensagem de carregamento */
+.loading-text {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #666;
+}
+
+/* Estilo dos MovieCards (opcional, caso queira sobrepor) */
+.movie-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.movie-card img {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #eee;
+    height: 270px;
+    object-fit: cover;
+}
+
+.movie-card h2 {
+    font-size: 1.1rem;
+    margin: 0.5rem;
+    color: #222;
+}
+
+.movie-card p {
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.movie-card a {
+    display: inline-block;
+    margin: 0.5rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0077ff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.movie-card a:hover {
+    background-color: #005fcc;
+}

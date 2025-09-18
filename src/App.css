@@ -1,0 +1,14 @@
+/* App.css */
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #ff6b6b;
+  margin-top: 1rem;
+  text-align: center;
+}
